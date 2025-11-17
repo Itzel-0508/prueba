@@ -1,0 +1,182 @@
+:root {
+    --primary-color: #6f42c1;
+    --secondary-color: #e83e8c;
+    --accent-color: #20c997;
+    --dark-color: #343a40;
+    --light-color: #f8f9fa;
+}
+
+/* Botón flotante */
+.btn-flotante {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    background: #ff4081;
+    color: white;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 28px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    z-index: 9999;
+}
+
+.ventana-flotante {
+    display: none;   /* 🔥 IMPORTANTE: inicia oculta */
+    position: fixed;
+    bottom: 80px;
+    right: 20px;
+    width: 350px;
+    max-height: 80vh;
+    overflow-y: auto;
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+    z-index: 9999;
+}
+/* Estrellas */
+.star-rating i {
+    font-size: 28px;
+    color: #ccc;
+    cursor: pointer;
+}
+
+.star-rating .bi-star-fill {
+    color: gold;
+}
+
+
+.navbar-brand {
+    font-weight: 700;
+    color: var(--primary-color) !important;
+}
+
+.hero-section {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(images/fondo.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 70vh;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+
+.service-card {
+    transition: transform 0.3s, box-shadow 0.3s;
+    height: 100%;
+    border: none;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.nav-pills .nav-link {
+    color: var(--dark-color);
+    font-weight: 500;
+    padding: 10px 20px;
+    margin: 0 5px;
+    border-radius: 30px;
+}
+
+.nav-pills .nav-link.active {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.testimonial-card {
+    border-left: 4px solid var(--primary-color);
+    background-color: var(--light-color);
+    height: 100%;
+}
+
+footer {
+    background-color: var(--dark-color);
+    color: white;
+}
+
+.btn-primary {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.btn-primary:hover {
+    background-color: #5a2da3;
+    border-color: #5a2da3;
+}
+
+.section-title {
+    position: relative;
+    margin-bottom: 3rem;
+}
+
+.section-title:after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 3px;
+    background-color: var(--primary-color);
+}
+
+.event-type-icon {
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+.contact-form {
+    background-color: var(--light-color);
+    border-radius: 10px;
+    padding: 2rem;
+}
+
+.stats-section {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.stats-number {
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+/* Estilos para el carrusel de testimonios */
+.testimonial-carousel {
+    padding: 2rem 0;
+}
+
+.carousel-indicators [data-bs-target] {
+    background-color: var(--primary-color);
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    margin: 0 5px;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: var(--primary-color);
+    border-radius: 50%;
+    padding: 15px;
+}
+
+.carousel-item {
+    padding: 0 15%;
+}
+
+@media (max-width: 768px) {
+    .carousel-item {
+        padding: 0 5%;
+    }
+}
