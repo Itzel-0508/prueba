@@ -1,0 +1,681 @@
+
+<!DOCTYPE html> 
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eterna Celebración - Organización de Eventos</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+   <link rel ="stylesheet" href="css/styles.css">
+   
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <i class="bi bi-balloon-heart me-2"></i>Eterna Celebración
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#servicios">Servicios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#galeria">Galería</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#testimonios">Testimonios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contacto">Contacto</a>
+                    </li>
+                    <li class="nav-item ms-2">
+                        <a class="btn btn-primary" href="#contacto">Solicitar Presupuesto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section" style="background-image: url(images/fondo.jpg);">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-8">
+                    <h1 class="display-4 fw-bold mb-4">Creamos momentos inolvidables</h1>
+                    <p class="lead mb-4">Especialistas en la organización de eventos únicos: aniversarios, pedidas de
+                        matrimonio, cumpleaños y bodas. Deja que nos encarguemos de cada detalle para que tú solo
+                        disfrutes.</p>
+                    <div class="d-flex flex-wrap gap-3">
+                        <a href="#servicios" class="btn btn-primary btn-lg">Nuestros Servicios</a>
+                        <a href="#contacto" class="btn btn-outline-light btn-lg">Contactar Ahora</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Servicios con Pestañas -->
+    <section id="servicios" class="py-5">
+        <div class="container">
+            <div class="row mb-5">
+                <div class="col text-center">
+                    <h2 class="section-title display-5 fw-bold">Nuestros Servicios</h2>
+                    <p class="lead">Ofrecemos una amplia gama de servicios para hacer tu evento especial y único</p>
+                </div>
+            </div>
+
+            <!-- Pestañas de Bootstrap -->
+            <ul class="nav nav-pills mb-5 justify-content-center" id="pills-tab" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="pills-bodas-tab" data-bs-toggle="pill"
+                        data-bs-target="#pills-bodas" type="button" role="tab" aria-controls="pills-bodas"
+                        aria-selected="true">
+                        <i class="bi bi-people-fill me-2"></i>Bodas
+                    </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="pills-pedidas-tab" data-bs-toggle="pill"
+                        data-bs-target="#pills-pedidas" type="button" role="tab" aria-controls="pills-pedidas"
+                        aria-selected="false">
+                        <i class="bi bi-heart-fill me-2"></i>Pedidas
+                    </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="pills-cumpleanos-tab" data-bs-toggle="pill"
+                        data-bs-target="#pills-cumpleanos" type="button" role="tab" aria-controls="pills-cumpleanos"
+                        aria-selected="false">
+                        <i class="bi bi-gift-fill me-2"></i>Cumpleaños
+                    </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="pills-aniversarios-tab" data-bs-toggle="pill"
+                        data-bs-target="#pills-aniversarios" type="button" role="tab" aria-controls="pills-aniversarios"
+                        aria-selected="false">
+                        <i class="bi bi-calendar-heart me-2"></i>Aniversarios
+                    </button>
+                </li>
+            </ul>
+
+            <div class="tab-content" id="pills-tabContent">
+                <!-- Pestaña Bodas -->
+                <div class="tab-pane fade show active" id="pills-bodas" role="tabpanel"
+                    aria-labelledby="pills-bodas-tab">
+                    <div class="row g-4">
+                        <div class="col-md-4">
+                            <div class="card service-card shadow-sm">
+                                <img src="images/boda4.jpg" class="card-img-top" alt="Boda elegante"
+                                    style="height: 200px; object-fit: cover;">
+                                <div class="card-body">
+                                    <h5 class="card-title">Boda Elegante</h5>
+                                    <p class="card-text">Organización completa de bodas con todos los detalles
+                                        cuidadosamente planificados para un día perfecto e inolvidable.</p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <span class="fw-bold text-primary">Desde $15,000</span>
+                                        <a href="#contacto" class="btn btn-primary">Solicitar</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card service-card shadow-sm">
+                                <img src="images/boda2.png" class="card-img-top" alt="Boda íntima"
+                                    style="height: 200px; object-fit: cover;">
+                                <div class="card-body">
+                                    <h5 class="card-title">Boda Íntima</h5>
+                                    <p class="card-text">Celebraciones pequeñas y significativas con un toque personal y
+                                        todos los servicios esenciales para un día especial.</p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <span class="fw-bold text-primary">Desde $4,500</span>
+                                        <a href="#contacto" class="btn btn-primary">Solicitar</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card service-card shadow-sm">
+                                <img src="images/boda3.jpg" class="card-img-top" alt="Boda destino"
+                                    style="height: 200px; object-fit: cover;">
+                                <div class="card-body">
+                                    <h5 class="card-title">Boda Destino</h5>
+                                    <p class="card-text">Planificación de bodas en lugares especiales, gestionando todos
+                                        los detalles logísticos para una experiencia única.</p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <span class="fw-bold text-primary">Desde $12,000</span>
+                                        <a href="#contacto" class="btn btn-primary">Solicitar</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Pestaña Pedidas -->
+                <div class="tab-pane fade" id="pills-pedidas" role="tabpanel" aria-labelledby="pills-pedidas-tab">
+                    <div class="row g-4">
+                        <div class="col-md-4">
+                            <div class="card service-card shadow-sm">
+                                <img src="images/pedida2.jpg" class="card-img-top" alt="Pedida romántica"
+                                    style="height: 200px; object-fit: cover;">
+                                <div class="card-body">
+                                    <h5 class="card-title">Pedida Romántica</h5>
+                                    <p class="card-text">Organización de propuestas de matrimonio únicas y memorables en
+                                        lugares especiales con todos los detalles.</p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <span class="fw-bold text-primary">Desde $2000</span>
+                                        <a href="#contacto" class="btn btn-primary">Solicitar</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card service-card shadow-sm">
+                                <img src="images/pedida1.jpg" class="card-img-top" alt="Pedida sorpresa"
+                                    style="height: 200px; object-fit: cover;">
+                                <div class="card-body">
+                                    <h5 class="card-title">Pedida Sorpresa</h5>
+                                    <p class="card-text">Planificación de propuestas inesperadas con todos los detalles
+                                        para una sorpresa perfecta e inolvidable.</p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <span class="fw-bold text-primary">Desde $2500</span>
+                                        <a href="#contacto" class="btn btn-primary">Solicitar</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card service-card shadow-sm">
+                                <img src="images/pedida3.jpg" class="card-img-top" alt="Pedida familiar"
+                                    style="height: 200px; object-fit: cover;">
+                                <div class="card-body">
+                                    <h5 class="card-title">Pedida Familiar</h5>
+                                    <p class="card-text">Propuestas que incluyen a seres queridos para compartir el
+                                        momento especial en familia con todos los detalles.</p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <span class="fw-bold text-primary">Desde $1,500</span>
+                                        <a href="#contacto" class="btn btn-primary">Solicitar</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Pestaña Cumpleaños -->
+                <div class="tab-pane fade" id="pills-cumpleanos" role="tabpanel" aria-labelledby="pills-cumpleanos-tab">
+                    <div class="row g-4">
+                        <div class="col-md-4">
+                            <div class="card service-card shadow-sm">
+                                <img src="images/cumple1.jpg" class="card-img-top" alt="Cumpleaños infantil"
+                                    style="height: 200px; object-fit: cover;">
+                                <div class="card-body">
+                                    <h5 class="card-title">Cumpleaños Infantil</h5>
+                                    <p class="card-text">Fiestas temáticas para niños con entretenimiento, decoración y
+                                        diversión garantizada para todos los invitados.</p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <span class="fw-bold text-primary">Desde $400</span>
+                                        <a href="#contacto" class="btn btn-primary">Solicitar</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card service-card shadow-sm">
+                                <img src="images/cumple2.jpg" class="card-img-top" alt="Cumpleaños adulto"
+                                    style="height: 200px; object-fit: cover;">
+                                <div class="card-body">
+                                    <h5 class="card-title">Cumpleaños Adulto</h5>
+                                    <p class="card-text">Celebraciones elegantes para adultos con catering, música y
+                                        ambiente sofisticado para una noche especial.</p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <span class="fw-bold text-primary">Desde $700</span>
+                                        <a href="#contacto" class="btn btn-primary">Solicitar</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card service-card shadow-sm">
+                                <img src="images/cumple3.jpg" class="card-img-top" alt="Fiesta sorpresa"
+                                    style="height: 200px; object-fit: cover;">
+                                <div class="card-body">
+                                    <h5 class="card-title">Fiesta Sorpresa</h5>
+                                    <p class="card-text">Organización de fiestas de cumpleaños sorpresa con todos los
+                                        detalles cuidados para una celebración inolvidable.</p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <span class="fw-bold text-primary">Desde $600</span>
+                                        <a href="#contacto" class="btn btn-primary">Solicitar</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Pestaña Aniversarios -->
+                <div class="tab-pane fade" id="pills-aniversarios" role="tabpanel"
+                    aria-labelledby="pills-aniversarios-tab">
+                    <div class="row g-4">
+                        <div class="col-md-4">
+                            <div class="card service-card shadow-sm">
+                                <img src="images/aniversario1.jpg" alt="Aniversario de bodas"
+                                    style="height: 200px; object-fit: cover;">
+                                <div class="card-body">
+                                    <h5 class="card-title">Aniversario de Bodas</h5>
+                                    <p class="card-text">Celebraciones especiales para conmemorar años de matrimonio con
+                                        estilo y elegancia para una ocasión única.</p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <span class="fw-bold text-primary">Desde $1,000</span>
+                                        <a href="#contacto" class="btn btn-primary">Solicitar</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card service-card shadow-sm">
+                                <img src="images/aniversario2.jpg" class="card-img-top" alt="Aniversario empresarial"
+                                    style="height: 200px; object-fit: cover;">
+                                <div class="card-body">
+                                    <h5 class="card-title">Aniversario Empresarial</h5>
+                                    <p class="card-text">Eventos corporativos para celebrar hitos empresariales con
+                                        clientes y empleados en un ambiente profesional.</p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <span class="fw-bold text-primary">Desde $2,000</span>
+                                        <a href="#contacto" class="btn btn-primary">Solicitar</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card service-card shadow-sm">
+                                <img src="images/aniversario3.jpg" class="card-img-top" alt="Renovación de votos"
+                                    style="height: 200px; object-fit: cover;">
+                                <div class="card-body">
+                                    <h5 class="card-title">Renovación de Votos</h5>
+                                    <p class="card-text">Ceremonias especiales para renovar los votos matrimoniales en
+                                        una celebración única y emocionante.</p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <span class="fw-bold text-primary">Desde $1,500</span>
+                                        <a href="#contacto" class="btn btn-primary">Solicitar</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Galería -->
+    <section id="galeria" class="py-5 bg-light">
+        <div class="container">
+            <div class="row mb-5">
+                <div class="col text-center">
+                    <h2 class="section-title display-5 fw-bold">Nuestra Galería</h2>
+                    <p class="lead">Algunos de los eventos que hemos organizado con éxito</p>
+                </div>
+            </div>
+            <div class="row g-3">
+                <div class="col-md-4">
+                    <img src="images/galeria1.png" class="img-fluid rounded shadow-sm" alt="Evento 1"
+                        style="height: 250px; width: 100%; object-fit: cover;">
+                </div>
+                <div class="col-md-4">
+                    <img src="images/galeria2.png" class="img-fluid rounded shadow-sm" alt="Evento 2"
+                        style="height: 250px; width: 100%; object-fit: cover;">
+                </div>
+                <div class="col-md-4">
+                    <img src="images/galeria3.png" class="img-fluid rounded shadow-sm" alt="Evento 3"
+                        style="height: 250px; width: 100%; object-fit: cover;">
+                </div>
+                <div class="col-md-4">
+                    <img src="images/galeria4.png" class="img-fluid rounded shadow-sm" alt="Evento 4"
+                        style="height: 250px; width: 100%; object-fit: cover;">
+                </div>
+                <div class="col-md-4">
+                    <img src="images/galeria5.png" class="img-fluid rounded shadow-sm" alt="Evento 5"
+                        style="height: 250px; width: 100%; object-fit: cover;">
+                </div>
+                <div class="col-md-4">
+                    <img src="images/galeria6.png" class="img-fluid rounded shadow-sm" alt="Evento 6"
+                        style="height: 250px; width: 100%; object-fit: cover;">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonios con Carrusel -->
+    
+
+    <section id="testimonios" class="py-5">
+        <div class="container">
+            <div class="row mb-5">
+                <div class="col text-center">
+                    <h2 class="section-title display-5 fw-bold">Testimonios</h2>
+                    <p class="lead">Lo que nuestros clientes dicen sobre nosotros</p>
+                </div>
+            </div>
+
+            <!-- Carrusel de Bootstrap -->
+            <div id="testimonialCarousel" class="carousel slide testimonial-carousel" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <!-- Testimonio 1 -->
+                    <div class="carousel-item active">
+                        <div class="row justify-content-center">
+                            <div class="col-md-8">
+                                <div class="testimonial-card p-4 rounded shadow-sm">
+                                    <div class="d-flex align-items-center mb-3">
+                                        <div class="flex-shrink-0">
+                                            <img src="images/persona1.jpg" alt="Cliente" class="rounded-circle"
+                                                width="60" height="60">
+                                        </div>
+                                        <div class="flex-grow-1 ms-3">
+                                            <h5 class="mb-0">María González</h5>
+                                            <p class="text-muted mb-0">Boda en la playa</p>
+                                        </div>
+                                    </div>
+                                    <p class="mb-0">"Eterna Celebración hizo realidad nuestra boda soñada. Cada detalle
+                                        fue cuidado al máximo y pudimos disfrutar plenamente de nuestro día especial sin
+                                        preocupaciones. Su profesionalismo y atención a los detalles hicieron que todo
+                                        fuera perfecto."</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Testimonio 2 -->
+                    <div class="carousel-item">
+                        <div class="row justify-content-center">
+                            <div class="col-md-8">
+                                <div class="testimonial-card p-4 rounded shadow-sm">
+                                    <div class="d-flex align-items-center mb-3">
+                                        <div class="flex-shrink-0">
+                                            <img src="images/persona2.jpg" alt="Cliente" class="rounded-circle"
+                                                width="60" height="60">
+                                        </div>
+                                        <div class="flex-grow-1 ms-3">
+                                            <h5 class="mb-0">Carlos Rodríguez</h5>
+                                            <p class="text-muted mb-0">Pedida de matrimonio</p>
+                                        </div>
+                                    </div>
+                                    <p class="mb-0">"Organizaron la pedida de matrimonio perfecta. Mi novia quedó
+                                        encantada con cada detalle. Sin duda, fue la mejor decisión confiar en ellas
+                                        para este momento tan especial. La logística, la decoración y la sorpresa fueron
+                                        impecables."</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Testimonio 3 -->
+                    <div class="carousel-item">
+                        <div class="row justify-content-center">
+                            <div class="col-md-8">
+                                <div class="testimonial-card p-4 rounded shadow-sm">
+                                    <div class="d-flex align-items-center mb-3">
+                                        <div class="flex-shrink-0">
+                                            <img src="images/persona3.jpg" alt="Cliente" class="rounded-circle"
+                                                width="60" height="60">
+                                        </div>
+                                        <div class="flex-grow-1 ms-3">
+                                            <h5 class="mb-0">Laura Martínez</h5>
+                                            <p class="text-muted mb-0">Fiesta de cumpleaños</p>
+                                        </div>
+                                    </div>
+                                    <p class="mb-0">"La fiesta de cumpleaños de mi hija fue mágica gracias a Eterna
+                                        Celebración. Los niños se divirtieron muchísimo y todo estuvo perfectamente
+                                        organizado. Desde la decoración temática hasta los juegos y el catering, todo
+                                        fue excelente."</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Anterior</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Siguiente</span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contacto -->
+    <section id="contacto" class="py-5 bg-light">
+        <div class="container">
+            <div class="row mb-5">
+                <div class="col text-center">
+                    <h2 class="section-title display-5 fw-bold">Contacto</h2>
+                    <p class="lead">Contáctanos para planificar tu evento perfecto</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <div class="contact-form shadow">
+                        <form>
+                            <div class="row g-3">
+                                <div class="col-md-6">
+                                    <label for="nombre" class="form-label">Nombre completo</label>
+                                    <input type="text" class="form-control" id="nombre" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="email" class="form-label">Correo electrónico</label>
+                                    <input type="email" class="form-control" id="email" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="telefono" class="form-label">Teléfono</label>
+                                    <input type="tel" class="form-control" id="telefono" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="evento" class="form-label">Tipo de evento</label>
+                                    <select class="form-select" id="evento" required>
+                                        <option value="" selected disabled>Selecciona un tipo de evento</option>
+                                        <option value="boda">Boda</option>
+                                        <option value="pedida">Pedida de matrimonio</option>
+                                        <option value="cumpleanos">Cumpleaños</option>
+                                        <option value="aniversario">Aniversario</option>
+                                        <option value="otro">Otro</option>
+                                    </select>
+                                </div>
+                                <div class="col-12">
+                                    <label for="mensaje" class="form-label">Mensaje</label>
+                                    <textarea class="form-control" id="mensaje" rows="5" required></textarea>
+                                </div>
+                                <div class="col-12 text-center">
+                                    <button type="submit" class="btn btn-primary btn-lg">Enviar Mensaje</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4">
+                    <h5 class="mb-3">
+                        <i class="bi bi-balloon-heart me-2"></i>Eterna Celebración
+                    </h5>
+                    <p class="mb-3">Especialistas en la organización de eventos únicos e inolvidables. Creamos momentos
+                        especiales que perdurarán para siempre en tu memoria.</p>
+                    <div class="d-flex">
+                        <a href="#" class="text-light me-3"><i class="bi bi-facebook fs-4"></i></a>
+                        <a href="#" class="text-light me-3"><i class="bi bi-instagram fs-4"></i></a>
+                        <a href="#" class="text-light me-3"><i class="bi bi-twitter fs-4"></i></a>
+                        <a href="#" class="text-light"><i class="bi bi-whatsapp fs-4"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h5 class="mb-3">Servicios</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="#servicios" class="text-light text-decoration-none">Bodas</a></li>
+                        <li class="mb-2"><a href="#servicios" class="text-light text-decoration-none">Pedidas</a></li>
+                        <li class="mb-2"><a href="#servicios" class="text-light text-decoration-none">Cumpleaños</a>
+                        </li>
+                        <li class="mb-2"><a href="#servicios" class="text-light text-decoration-none">Aniversarios</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h5 class="mb-3">Contacto</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2">
+                            <i class="bi bi-geo-alt me-2"></i>Av. Principal 123, Morelos, México
+                        </li>
+                        <li class="mb-2">
+                            <i class="bi bi-telephone me-2"></i>+1 234 567 890
+                        </li>
+                        <li class="mb-2">
+                            <i class="bi bi-envelope me-2"></i>info@eternacelebracion.com
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h5 class="mb-3">Horario de atención</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2">Lunes - Viernes: 9:00 - 18:00</li>
+                        <li class="mb-2">Sábados: 10:00 - 14:00</li>
+                        <li class="mb-2">Domingos: Cerrado</li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="my-4">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <p class="mb-0">&copy; 2025 Eterna Celebración. Todos los derechos reservados.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <a href="#" class="text-light text-decoration-none me-3">Política de privacidad</a>
+                    <a href="#" class="text-light text-decoration-none">Términos y condiciones</a>
+                </div>
+            </div>
+        </div>
+       
+
+    </footer>
+
+  <!-- Botón flotante -->
+<div class="btn-flotante" id="btnResenas">
+    <i class="bi bi-chat-heart"></i>
+</div>
+
+<!-- Ventana flotante de reseñas -->
+<div class="ventana-flotante" id="ventanaResenas">
+
+    <div class="d-flex justify-content-between align-items-center mb-2">
+        <h5 class="m-0">Tu experiencia en el sitio</h5>
+        <i class="bi bi-x-lg" id="cerrarVentana" style="cursor:pointer;"></i>
+    </div>
+
+    <!-- Pregunta 1 - Estrellas -->
+    <label class="fw-semibold">1. ¿Cómo calificarías tu experiencia general?</label>
+    <div class="star-rating mb-3" id="estrellas">
+        <i class="bi bi-star" data-value="1"></i>
+        <i class="bi bi-star" data-value="2"></i>
+        <i class="bi bi-star" data-value="3"></i>
+        <i class="bi bi-star" data-value="4"></i>
+        <i class="bi bi-star" data-value="5"></i>
+    </div>
+
+    <!-- Pregunta 2 -->
+    <label class="fw-semibold mt-2">2. ¿Qué fue lo que más te gustó del sitio?</label>
+    <textarea class="form-control mb-3" id="gusto" rows="2" placeholder="Ej. El diseño, la navegación, la información..."></textarea>
+
+    <!-- Pregunta 3 -->
+    <label class="fw-semibold">3. ¿Qué te gustaría que mejoremos?</label>
+    <textarea class="form-control mb-3" id="mejora" rows="2" placeholder="Puedes escribir cualquier sugerencia."></textarea>
+
+    <!-- Pregunta 4 -->
+    <label class="fw-semibold">4. ¿Encontraste lo que buscabas?</label>
+    <select class="form-control mb-3" id="encontrado">
+        <option value="">Selecciona una opción</option>
+        <option>Sí</option>
+        <option>No</option>
+        <option>Parcialmente</option>
+    </select>
+
+    <!-- Pregunta 5 -->
+    <label class="fw-semibold">5. ¿Cómo describirías la navegación del sitio?</label>
+    <select class="form-control mb-3" id="navegacion">
+        <option value="">Selecciona una opción</option>
+        <option>Fácil</option>
+        <option>Normal</option>
+        <option>Confusa</option>
+        <option>Muy difícil</option>
+    </select>
+
+    <!-- Pregunta 6 -->
+    <label class="fw-semibold">6. ¿La información del sitio te pareció clara?</label>
+    <select class="form-control mb-3" id="informacion">
+        <option value="">Selecciona una opción</option>
+        <option>Sí</option>
+        <option>No</option>
+        <option>Más o menos</option>
+    </select>
+
+    <!-- Pregunta 7 -->
+    <label class="fw-semibold">7. ¿Fue agradable el diseño visual del sitio?</label>
+    <select class="form-control mb-3" id="diseno">
+        <option value="">Selecciona una opción</option>
+        <option>Sí</option>
+        <option>No</option>
+        <option>Regular</option>
+    </select>
+
+    <!-- Pregunta 8 -->
+    <label class="fw-semibold">8. ¿Hubo algo que no te gustara?</label>
+    <textarea class="form-control mb-3" id="molestia" rows="2" placeholder="Si hubo algo incómodo, escríbelo."></textarea>
+
+    <!-- Pregunta 9 -->
+    <label class="fw-semibold">9. ¿Recomendarías esta página a alguien más?</label>
+    <select class="form-control mb-3" id="recomendar">
+        <option value="">Selecciona una opción</option>
+        <option>Sí</option>
+        <option>No</option>
+        <option>Tal vez</option>
+    </select>
+
+    <!-- Pregunta 10 -->
+    <label class="fw-semibold">10. Comentario final</label>
+    <textarea class="form-control mb-3" id="comentarioFinal" rows="2" placeholder="Escribe cualquier comentario adicional."></textarea>
+
+    <button class="btn btn-primary w-100" id="enviarResena">Enviar</button>
+</div>
+
+  <!-- ARCHIVOS JS EXTERNOS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/opinion.js"></script>
+
+</body>
+
+</html>
